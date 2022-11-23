@@ -1,6 +1,6 @@
 [submodule "pybind11"]
 	path = pybind11
 	url = git@github.com:pybind/pybind11.git
-[submodule "libaon"]
-	path = libaon
-	url = git@github.com:Tomcat-42/libaon.git
+[submodule "libesv"]
+	path = libesv
+	url = git@github.com:Tomcat-42/libesv.git
