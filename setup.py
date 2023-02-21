@@ -106,17 +106,17 @@ with open("LICENSE-3RD-PARTY", "w") as license_file:
     license_file.write(licenses)
 
 setup(
-    name="aon",
-    version="1.0.0",
+    name="pyaon",
+    version="1.0.1",
     author="Pablo Alessandro Santos Hugen",
     author_email="pablohuggem@gmail.com",
     description="python bindings for the aon library",
     long_description=long_desc,
     long_description_content_type="text/markdown",
-    url="https://github.com/Tomcat-42/aon",
+    url="https://github.com/Tomcat-42/pyaon",
     license="Public Domain",
     python_requires=">=3.5, <4",
-    ext_modules=[CMakeExtension("aon")],
+    ext_modules=[CMakeExtension("pyaon")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
     include_package_data=False,

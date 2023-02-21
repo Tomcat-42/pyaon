@@ -30,4 +30,4 @@ done
 
 # publish the wheels to PyPI
 echo "Publishing wheels to PyPI..."
-poetry publish -r pypi
+poetry publish

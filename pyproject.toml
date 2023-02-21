@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "aon"
-version = "1.0.0"
-description = "Interact with the AON (Andrezao Object Notation) file format"
+name = "pyaon"
+version = "1.0.1"
+description = "Interact with the AON Andrezao Object Notation file format"
 authors = ["Pablo <pablohuggem@gmail.com>"]
 readme = "README.md"
-homepage = "https://github.com/Tomcat-42/aon"
-documentation = "https://github.com/Tomcat-42/aon"
-repository = "https://github.com/Tomcat-42/aon"
-keywords = ["text file", "file format", "aon", "andrezao object notation", "serialization", "deserialization"]
+homepage = "https://github.com/Tomcat-42/pyaon"
+documentation = "https://github.com/Tomcat-42/pyaon"
+repository = "https://github.com/Tomcat-42/pyaon"
+keywords = ["text file", "file format", "pyaon", "serialization", "deserialization"]
 build = "build.py"
 packages = [
-    { include = "aon", format = "wheel"},
+    { include = "pyaon", format = "wheel"},
 ]
 
 [tool.poetry.dependencies]
@@ -27,5 +27,5 @@ sphinx-rtd-theme = "^0.4.3"
 
 
 [build-system]
-requires = ["setuptools>=42", "wheel", "cmake>=3.16", "pybind11-stubgen @ git+https://github.com/HaarigerHarald/pybind11-stubgen#egg=pybind11-stubgen"]
+requires = ["setuptools>=42", "wheel", "cmake>=3.16", "ninja", "pybind11-stubgen @ git+https://github.com/HaarigerHarald/pybind11-stubgen#egg=pybind11-stubgen"]
 build-backend = "setuptools.build_meta"
