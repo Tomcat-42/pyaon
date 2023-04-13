@@ -43,13 +43,13 @@ for whl in wheelhouse/*.whl; do
 done
 
 # fix up the permissions
-chmod -R a+rw /io/dist /io/build /io/daa.egg-info
+chmod -R a+rw /io/dist /io/build
 
 # Install packages and test
-for PYBIN in /opt/python/*/bin/; do
-    "${PYBIN}/pip" install python-manylinux-demo --no-index -f /io/dist
-    (
-        cd "$HOME"
-        "${PYBIN}/nosetests" pymanylinuxdemo
-    )
-done
+# for PYBIN in /opt/python/*/bin/; do
+#     "${PYBIN}/pip" install python-manylinux-demo --no-index -f /io/dist
+#     (
+#         cd "$HOME"
+#         "${PYBIN}/nosetests" pymanylinuxdemo
+#     )
+# done

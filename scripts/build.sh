@@ -6,7 +6,7 @@ MANYLINUX_URL="quay.io/pypa"
 
 # update all git submodules
 echo "Updating git submodules..."
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 
 # clean up previous builds
 echo "Cleaning up previous builds..."
@@ -27,7 +27,3 @@ for PLAT in "${PLATS[@]}"; do
     echo "Building wheels for $PLAT..."
     docker run --rm -v "$PWD":/io "$MANYLINUX_IMAGE" /io/scripts/build-wheels.sh
 done
-
-# publish the wheels to PyPI
-echo "Publishing wheels to PyPI..."
-poetry publish
