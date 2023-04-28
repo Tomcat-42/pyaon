@@ -107,7 +107,7 @@ with open("LICENSE-3RD-PARTY", "w") as license_file:
 
 setup(
     name="pyaon",
-    version="1.0.1",
+    version="1.0.3",
     author="Pablo Alessandro Santos Hugen",
     author_email="pablohuggem@gmail.com",
     description="python bindings for the aon library",

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyaon"
-version = "1.0.1"
+version = "1.0.3"
 description = "Interact with the AON Andrezao Object Notation file format"
 authors = ["Pablo <pablohuggem@gmail.com>"]
 readme = "README.md"
